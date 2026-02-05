@@ -23,6 +23,12 @@ examples/
 │   ├── README.md          # Detailed usage instructions
 │   ├── main.py            # RL + sandbox minimal example
 │   └── pyproject.toml     # Dependency configuration
+├── mobile-use/            # Mobile automation example
+│   ├── README.md          # Detailed usage instructions
+│   ├── quickstart.py      # Quick start example
+│   ├── batch.py           # Batch operations (multi-process + async)
+│   ├── sandbox_connect.py # Single sandbox connection tool (CLI)
+│   └── requirements.txt   # Dependencies
 └── shop-assistant/        # Shopping cart automation example
     ├── README.md          # Detailed usage instructions
     ├── automation_cart_demo.py  # Shopping flow automation demo
@@ -91,6 +97,25 @@ Demonstrates how to integrate AgentSandbox sandbox in reinforcement learning sce
 - Code execution for mathematical reasoning tasks
 - Agent tool calling training
 
+**Tech Stack**: AgentSandbox
+
+### mobile-use - Mobile Automation Example
+
+Demonstrates how to use AgentSandbox cloud sandbox to run Android devices with Appium for mobile automation:
+
+- **Cloud Android Device**: Android runs in sandbox, locally controlled via Appium
+- **Screen Streaming**: Real-time screen viewing via ws-scrcpy
+- **Element Operations**: Find and click elements by text or resource-id
+- **CLI Tool**: `sandbox_connect.py` for connecting to existing sandboxes
+- **Batch Testing**: High-concurrency sandbox testing (multi-process + async)
+
+**Use Cases**:
+- Mobile app automated testing
+- Mobile UI/UX testing
+- High-concurrency mobile testing
+- GPS location mocking
+
+**Tech Stack**: Appium, Android, pytest
 
 ### shop-assistant - Shopping Cart Automation Example
 
